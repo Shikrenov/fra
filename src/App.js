@@ -1,14 +1,20 @@
 import './App.css';
 import React from 'react';
 
+const Person = () => {
+  return (
+    <div>
+      <h1>Name: John</h1>
+      <h2>Last Name: Doe</h2>
+      <h2>Age: 30</h2>
+      </div>
+  )
+}
 const App = () => {
-  const name = 'John';
-  const isNameShowing = false;
   return (
     <div className="App">
-      <h1>Hello, {isNameShowing ? name : 'someone'}</h1>
-    </div>
+      <Person />
+      </div>
   );
-
 }
 export default App;
