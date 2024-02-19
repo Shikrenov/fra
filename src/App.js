@@ -1,19 +1,14 @@
 import './App.css';
 import React from 'react';
+import {useState} from 'react';
 
-const Person = () => {
-  return (
-    <div>
-      <h1>Name: John</h1>
-      <h2>Last Name: Doe</h2>
-      <h2>Age: 30</h2>
-      </div>
-  )
-}
 const App = () => {
+  const [counter, setCounter] = useState(0); 
   return (
     <div className="App">
-      <Person />
+      <button onClick ={() => alert ('clicked')}>-</button>
+      <h1>{counter}</h1>
+      <button>+</button>
       </div>
   );
 }
